@@ -1,0 +1,68 @@
+body {
+	font-family: 'Roboto', sans-serif;
+}
+.homeImg {
+	width: 100px;
+}
+.top-bar {
+	background-color: #f1f1f1;
+}
+.header {
+	margin-top: 25px;
+}
+.top-bar-title {
+	float: none;
+}
+.email {
+	position: relative;
+	top: 0px;
+
+	font-family: impact, sans-serif;
+	font-size: 1.0em;
+	font-weight: 800;
+	letter-spacing: 1px;
+	float: right;
+
+}
+.title {
+	font-family: impact, sans-serif;
+	font-size: 1.5em;
+	font-weight: 800;
+	margin-left: 7%;
+	letter-spacing: 1px;
+}
+a:link, a:hover, a:active, a:visited {
+	text-decoration: none;
+	color: #000;
+}
+.skills {
+	font-weight: 900;
+	
+}
+.section2 {
+	margin-top: 200px;
+}
+.section4{
+margin-left: 20%;
+}
+.web, .graphic{
+	font-weight: 700;
+}
+.graphic {
+
+
+}
+.web, .right {	
+	padding-left: 40px;	
+}
+.left, .right {
+	width: 20%;
+	font-size: .75em;
+}
+.experience {
+	font-weight: 900;
+	
+}
+.section5 {
+	font-size: .75em;
+	}

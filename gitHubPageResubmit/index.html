@@ -1,0 +1,81 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clemente's Landing Page</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/foundation.min.css">
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/main.css">
+   <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700,900" rel="stylesheet">
+   <script src="js/script.js"></script>
+  </head>
+  <body>
+  
+<div class="row"> 
+
+<strong id="greeting">hello!</strong>
+  <header>
+<div class="row">
+  <img src="images/header.png" class="header columns small-6 large-6 float-center" alt="image of calendar design">
+</div>
+</header>
+
+
+
+<section class="row section2">
+		<p class="looking float-center text-center"><br><strong>Hello,</strong> I am looking for a <strong><br>UI design position.</strong>
+</section>
+
+
+<script type= "text/JavaScript">
+var myDate = new Date();
+var myHour = myDate.getHours();
+/* The line above creates a Date() object in the browser and assigns it the varable called
+myDate */
+if ( myDate.getHours() < 12 )
+{
+    document.getElementById('greeting').innerHTML = "Good morning.";
+        }
+else  /* Hour is from noon to 5pm (actually to 5:59 pm) */
+if ( myDate.getHours() >= 12 && myDate.getHours() <= 17 )
+{
+    document.getElementById('greeting').innerHTML = "Good afternoon.";
+}
+else  /* the hour is after 5pm, so it is between 6pm and midnight */
+if ( myDate.getHours() > 17 && myDate.getHours() <= 24 )
+{
+   document.getElementById('greeting').innerHTML = "Good Evening.";
+}
+else  /* the hour is not between 0 and 24, so something is wrong */
+{
+    document.getElementById('greeting').innerHTML = "I'm not sure what time it is!";
+}
+document.write(" The hour is: ")
+document.write( myDate.getHours() );
+</script>
+
+<section class="row section4">
+		<div class="columns graphic-skills float-left small-4">
+			<h2 class="h2 graphic">Graphic</h2>
+			<p class="left">Photoshop<br>Illustrator<br>AfterEffects<br>
+			 Typography<br>infographics</p>
+		</div>
+		<div class="columns web-skills float-left small-4">
+			<h2 class="h2 web ">Web</h2>
+			<p class="right">HMTL5<br>CSS<br>CSS3<br>FTP<br>WordPress</p>
+		</div>
+</section>
+
+
+
+
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
